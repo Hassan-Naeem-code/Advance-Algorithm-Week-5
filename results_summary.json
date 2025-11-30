@@ -1,51 +1,137 @@
 [
   {
-    "name": "daily_log",
+    "experiment": "daily_log",
+    "estimator": "mlp",
     "metrics": {
-      "MAE": 51659.968634809375,
-      "RMSE": 79459.04181177651,
-      "R2": -21.280741024891245,
-      "MAPE": 118.94257917224758
+      "MAE": 51750.57435476156,
+      "RMSE": 79635.93320735889,
+      "R2": -21.380054037122083,
+      "MAPE": 119.29741514143235
     },
     "best_params": {
-      "mlp__alpha": 0.001,
-      "mlp__hidden_layer_sizes": [
+      "est__alpha": 0.0001,
+      "est__hidden_layer_sizes": [
         64
       ],
-      "mlp__learning_rate_init": 0.001
+      "est__learning_rate_init": 0.001
     }
   },
   {
-    "name": "weekly",
+    "experiment": "daily_log",
+    "estimator": "rf",
     "metrics": {
-      "MAE": 263989.3147981599,
-      "RMSE": 267601.00349629566,
-      "R2": -36.297692583834845,
-      "MAPE": 99.99991589116081
+      "MAE": 15428.654070651048,
+      "RMSE": 19652.47763117379,
+      "R2": -0.3629427214589609,
+      "MAPE": 32.18531288096998
     },
     "best_params": {
-      "mlp__alpha": 0.0001,
-      "mlp__hidden_layer_sizes": [
-        64
-      ],
-      "mlp__learning_rate_init": 0.001
+      "est__max_depth": 10,
+      "est__n_estimators": 200
     }
   },
   {
-    "name": "daily_expanded",
+    "experiment": "daily_log",
+    "estimator": "hgb",
     "metrics": {
-      "MAE": 45876.33220260845,
-      "RMSE": 48907.23844082882,
-      "R2": -7.3259910807405735,
-      "MAPE": 99.99594119898383
+      "MAE": 21271.659451399595,
+      "RMSE": 25425.01875326053,
+      "R2": -1.281211473947998,
+      "MAPE": 43.35008952461829
     },
     "best_params": {
-      "mlp__alpha": 0.0001,
-      "mlp__hidden_layer_sizes": [
-        64,
-        32
+      "est__learning_rate": 0.05,
+      "est__max_iter": 100
+    }
+  },
+  {
+    "experiment": "weekly",
+    "estimator": "mlp",
+    "metrics": {
+      "MAE": 263989.31688873796,
+      "RMSE": 267601.00572292524,
+      "R2": -36.29769320452121,
+      "MAPE": 99.99991662714145
+    },
+    "best_params": {
+      "est__alpha": 0.001,
+      "est__hidden_layer_sizes": [
+        64
       ],
-      "mlp__learning_rate_init": 0.001
+      "est__learning_rate_init": 0.001
+    }
+  },
+  {
+    "experiment": "weekly",
+    "estimator": "rf",
+    "metrics": {
+      "MAE": 61732.86741750005,
+      "RMSE": 71780.43414554787,
+      "R2": -1.683605363187242,
+      "MAPE": 21.765707164706004
+    },
+    "best_params": {
+      "est__max_depth": null,
+      "est__n_estimators": 100
+    }
+  },
+  {
+    "experiment": "weekly",
+    "estimator": "hgb",
+    "metrics": {
+      "MAE": 131283.0406346154,
+      "RMSE": 138402.32164171856,
+      "R2": -8.97684534908744,
+      "MAPE": 48.181347777814125
+    },
+    "best_params": {
+      "est__learning_rate": 0.1,
+      "est__max_iter": 100
+    }
+  },
+  {
+    "experiment": "daily_expanded",
+    "estimator": "mlp",
+    "metrics": {
+      "MAE": 45877.035490891525,
+      "RMSE": 48907.84762353083,
+      "R2": -7.326198497126926,
+      "MAPE": 99.99798399497524
+    },
+    "best_params": {
+      "est__alpha": 0.001,
+      "est__hidden_layer_sizes": [
+        64
+      ],
+      "est__learning_rate_init": 0.001
+    }
+  },
+  {
+    "experiment": "daily_expanded",
+    "estimator": "rf",
+    "metrics": {
+      "MAE": 13706.45746714285,
+      "RMSE": 18774.87834439543,
+      "R2": -0.22699819131417254,
+      "MAPE": 28.679733542932585
+    },
+    "best_params": {
+      "est__max_depth": null,
+      "est__n_estimators": 100
+    }
+  },
+  {
+    "experiment": "daily_expanded",
+    "estimator": "hgb",
+    "metrics": {
+      "MAE": 16086.586924840292,
+      "RMSE": 20892.573608984218,
+      "R2": -0.5194049651862458,
+      "MAPE": 32.466182050865946
+    },
+    "best_params": {
+      "est__learning_rate": 0.05,
+      "est__max_iter": 100
     }
   }
 ]

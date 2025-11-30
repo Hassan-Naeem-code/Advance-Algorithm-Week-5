@@ -4,6 +4,6 @@ data:
 
 experiments:
   default_param_grid:
-    mlp__hidden_layer_sizes: [[32], [64], [32, 16]]
-    mlp__alpha: [0.0001, 0.001]
-    mlp__learning_rate_init: [0.001, 0.0001]
+    est__hidden_layer_sizes: [[32], [64], [32, 16]]
+    est__alpha: [0.0001, 0.001]
+    est__learning_rate_init: [0.001, 0.0001]

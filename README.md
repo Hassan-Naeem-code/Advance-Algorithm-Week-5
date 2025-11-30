@@ -21,6 +21,36 @@ make install
 make run
 ```
 
+Recommended Python
+------------------
+This project is developed and tested with Python 3.11. Using Python 3.11 ensures prebuilt binary wheels are available for key packages (notably `scikit-learn`) and avoids slow or failing source builds.
+
+Install Python 3.11 (macOS examples):
+
+- Homebrew:
+
+```bash
+brew install python@3.11
+# then you can run: python3.11 -m venv .venv
+```
+
+- pyenv (if you prefer per-project versions):
+
+```bash
+pyenv install 3.11.14
+pyenv local 3.11.14
+python -m venv .venv
+```
+
+Create the venv and install dependencies:
+
+```bash
+make venv
+make install
+```
+
+If you run into a scikit-learn build error, confirm your active Python is 3.11 and re-create the venv using that interpreter.
+
 What this repo provides
 - A leakage-safe temporal split (70/15/15 chronological)
 - Calendar, lag, and rolling-window features (no future leakage)

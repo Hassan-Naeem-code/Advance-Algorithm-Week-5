@@ -1,0 +1,51 @@
+[
+  {
+    "name": "daily_log",
+    "metrics": {
+      "MAE": 51659.968634809375,
+      "RMSE": 79459.04181177651,
+      "R2": -21.280741024891245,
+      "MAPE": 118.94257917224758
+    },
+    "best_params": {
+      "mlp__alpha": 0.001,
+      "mlp__hidden_layer_sizes": [
+        64
+      ],
+      "mlp__learning_rate_init": 0.001
+    }
+  },
+  {
+    "name": "weekly",
+    "metrics": {
+      "MAE": 263989.3147981599,
+      "RMSE": 267601.00349629566,
+      "R2": -36.297692583834845,
+      "MAPE": 99.99991589116081
+    },
+    "best_params": {
+      "mlp__alpha": 0.0001,
+      "mlp__hidden_layer_sizes": [
+        64
+      ],
+      "mlp__learning_rate_init": 0.001
+    }
+  },
+  {
+    "name": "daily_expanded",
+    "metrics": {
+      "MAE": 45876.33220260845,
+      "RMSE": 48907.23844082882,
+      "R2": -7.3259910807405735,
+      "MAPE": 99.99594119898383
+    },
+    "best_params": {
+      "mlp__alpha": 0.0001,
+      "mlp__hidden_layer_sizes": [
+        64,
+        32
+      ],
+      "mlp__learning_rate_init": 0.001
+    }
+  }
+]

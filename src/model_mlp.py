@@ -11,9 +11,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.neural_network import MLPRegressor
-from sklearn.ensemble import RandomForestRegressor, HistGradientBoostingRegressor
 from sklearn.model_selection import GridSearchCV, TimeSeriesSplit
-from sklearn.linear_model import Ridge
 from sklearn.base import RegressorMixin
 
 

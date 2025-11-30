@@ -1,11 +1,12 @@
+# ruff: noqa: E402
 import sys
 import pathlib
-import numpy as np
-import pandas as pd
-
 # ensure repo root on path
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
+
+import numpy as np
+import pandas as pd
 
 from src.model_mlp import naive_last, seasonal_naive
 

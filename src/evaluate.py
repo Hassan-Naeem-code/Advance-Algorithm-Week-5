@@ -1,5 +1,4 @@
 """Evaluation metrics and plotting utilities."""
-from typing import Tuple
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt

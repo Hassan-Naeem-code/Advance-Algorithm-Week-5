@@ -1,11 +1,11 @@
+# ruff: noqa: E402
 import sys
 import pathlib
-import pandas as pd
-
 # Ensure project root is on sys.path so `src` package is importable during tests
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
+import pandas as pd
 from src.features import create_features
 
 

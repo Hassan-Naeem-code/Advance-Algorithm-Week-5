@@ -3,14 +3,13 @@ Run with `python src/main.py` (recommended inside a virtualenv).
 """
 from pathlib import Path
 import joblib
-import numpy as np
 import pandas as pd
 import logging
 
 from src.logging_config import configure_logging
 from src.data_load import load_data
 from src.features import create_features
-from src.model_mlp import time_series_grid_search, build_pipeline, naive_last
+from src.model_mlp import time_series_grid_search, naive_last
 from src.evaluate import compute_metrics, plot_predictions, plot_residuals
 
 
